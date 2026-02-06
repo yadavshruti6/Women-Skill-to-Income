@@ -1,165 +1,90 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue.svg)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
-[![Pi Network](https://img.shields.io/badge/Pi%20Network-Integrated-purple.svg)](https://minepi.com/)
-
 # Women-Skill-to-Income Platform
 
+Women-Skill-to-Income is a full-stack prototype designed to help women
+earn income using skills they already have. The platform focuses on
+small, practical tasks instead of long-term freelance projects, making
+it accessible to homemakers, rural women, and those returning to work
+after career breaks.
+
 ## What This Platform Does
+Many women possess useful skills such as cooking, stitching, tutoring,
+basic data entry, or translation, but lack access to safe and flexible
+earning opportunities. This platform connects such users with
+well-defined, short-duration tasks that match their skills.
 
-This platform connects women who have skills but limited formal work experience—like homemakers, rural women, or those returning after career breaks—with small, task-based work opportunities. Instead of requiring them to compete on traditional freelancing platforms where established professionals dominate, this system matches their existing skills (cooking, crafts, tutoring, basic data entry) to microjobs they can realistically complete.
-
-The platform handles three main things:
-1. Helps women create a simple skill profile
-2. Matches them to appropriate tasks posted by requesters
-3. Ensures payments are secure and transparent using blockchain-based transactions
+The goal is not to compete with large freelancing platforms, but to
+create a simpler entry point for first-time digital workers.
 
 ## Problem Statement
+Traditional online work platforms assume prior experience, confidence,
+and digital literacy. For women with limited exposure to online work,
+these platforms feel complex and risky.
 
-Many women who possess practical skills struggle to convert those skills into income. The barriers aren't about capability—they're about access and trust. Rural women may not have bank accounts. Homemakers may lack confidence navigating complex platforms. Women returning to work after years away may not know where to start.
+Common challenges include:
+- Difficulty trusting online employers
+- Fear of not getting paid
+- Lack of resumes or portfolios
+- Limited time due to household responsibilities
 
-Existing freelancing platforms assume users already understand how to market themselves, negotiate rates, and manage client relationships. For first-time digital workers, especially those in underserved communities, these platforms can feel inaccessible. Additionally, concerns about payment reliability and personal safety when interacting with strangers online prevent many women from even trying.
-
-This platform aims to lower those barriers by focusing on:
-- **Simplicity**: Minimal technical knowledge required
-- **Trust**: Verified transactions and escrow-based payments
-- **Flexibility**: Small tasks that fit around existing responsibilities
-- **Inclusivity**: Designed for users with limited prior digital work experience
+This project addresses these issues by focusing on simplicity, trust,
+and skill-based matching.
 
 ## How It Works
 
-**Step 1: Registration and Skill Mapping**  
-A woman signs up and describes what she can do—cooking, stitching, tutoring children, entering data, translating, etc. The system doesn't require a resume or portfolio. It asks simple questions about her skills and availability.
+### 1. Skill Registration
+Users create a simple profile describing what they can do and how much
+time they can give. No resume or portfolio is required.
 
-**Step 2: Task Matching**  
-Requesters (individuals or small businesses) post specific tasks with clear requirements: "Need someone to label 500 images" or "Looking for weekly tutoring sessions for a 5th grader." The system suggests relevant tasks based on the woman's stated skills.
+### 2. Task Matching
+Requesters post small, clearly defined tasks. The system suggests tasks
+based on the user's listed skills.
 
-**Step 3: Task Acceptance and Execution**  
-If a task looks manageable, the woman accepts it. She completes the work according to the agreed timeline and uploads deliverables through the platform.
+### 3. Task Completion
+Once a task is accepted, the user completes it within the agreed
+timeline and submits the result through the platform.
 
-**Step 4: Payment**  
-Payment is held in escrow using blockchain (Pi Network integration for low-cost transactions). Once the requester confirms the work is satisfactory, funds are released to the woman's wallet. If disputes arise, a simple resolution process helps mediate.
+### 4. Payment & Trust
+Payments are handled using an escrow-style workflow to ensure fairness.
+Funds are released only after task completion is confirmed.
 
-**Step 5: Reputation Building**  
-Completed tasks build a track record. Over time, this helps women access better opportunities and gain confidence in their ability to earn independently.
+### 5. Reputation Building
+Each completed task helps build a work history, enabling access to
+better opportunities over time.
 
-## Trust and Safety Considerations
+## Trust & Safety
+Trust is critical, especially for first-time users. The platform
+includes:
+- Escrow-style payment flow
+- Basic identity verification
+- Simple dispute resolution
+- Clear community guidelines
 
-For many users, this might be their first experience earning money through digital work. Trust is not optional—it's foundational.
+## How This Is Different from Freelancing Platforms
 
-The platform includes:
-- **Escrow payments**: Requesters cannot withhold funds arbitrarily. Workers know they'll be paid for verified work.
-- **Verified identities**: Basic identity checks reduce fraud on both sides.
-- **Dispute resolution**: A straightforward process for handling disagreements without requiring legal intervention.
-- **Community guidelines**: Clear rules about appropriate behavior and task types.
+| Aspect | Traditional Freelancing | Women-Skill-to-Income |
+|------|-------------------------|----------------------|
+| Target users | Experienced professionals | First-time workers |
+| Entry barrier | High | Low |
+| Work type | Large projects | Small tasks |
+| Trust model | Competitive ratings | Payment protection |
+| Usability | Assumes digital confidence | Beginner-friendly |
 
-Safety also means protecting user data. The platform minimizes what personal information is shared publicly and uses blockchain to maintain transaction transparency without exposing sensitive details.
+## Technical Overview
+- Backend: Node.js with TypeScript
+- Database: PostgreSQL
+- API: REST-based architecture
+- Testing: Unit and integration tests
+- Architecture: Modular and extensible
 
-## How This Differs from Standard Freelancing Platforms
+## Project Status
+This is a prototype built to explore system design, backend architecture,
+and real-world problem solving. It is not intended for production use
+without further security and usability testing.
 
-| Aspect | Traditional Platforms (Upwork, Fiverr) | This Platform |
-|--------|--------------------------------------|---------------|
-| Target audience | Established professionals competing globally | First-time workers with basic skills |
-| Complexity | Requires portfolio, competitive bidding | Simple skill listing, direct task matching |
-| Task size | Often larger projects requiring experience | Small, well-defined microtasks |
-| Trust model | Ratings-heavy, competitive | Escrow-based, supportive |
-| Onboarding | Assumes digital literacy | Designed for low-tech-confidence users |
-
-This isn't to say traditional platforms are bad—they serve their audience well. But they're not built for someone who's never freelanced before and doesn't have the time or resources to build a competitive profile. This platform fills that gap.
-
-## Interview Explanation
-
-*If you were explaining this project in an interview:*
-
-"I built a platform that helps women with practical skills—like homemakers or rural workers—find small paid tasks online. The idea came from observing that while many women have abilities that could generate income, they often don't know how to access digital work opportunities or feel intimidated by existing freelancing sites.
-
-The system works by allowing women to register with a simple skill profile. Requesters post specific microtasks, and the platform matches tasks to appropriate workers. Payments are handled using blockchain-based escrow to ensure transparency and trust, which is particularly important for first-time digital workers who may be skeptical about getting paid.
-
-The technical stack includes TypeScript for the backend, a blockchain integration using Pi Network for low-cost transactions, and a smart contract for handling task agreements and payments. I also built in basic dispute resolution and reputation tracking.
-
-The goal wasn't to compete with Upwork or Fiverr—those platforms serve experienced freelancers. This focuses on accessibility and inclusion for people who've been left out of the gig economy. It's about making the entry point much lower and the trust factors much stronger."
-
-## Technical Components
-
-- **Backend**: Node.js with TypeScript
-- **Database**: PostgreSQL with structured models for users, wallets, tasks, and transactions
-- **Blockchain**: Ethereum-based smart contracts, Pi Network integration for payments
-- **Testing**: Comprehensive test coverage for controllers, services, and smart contracts
-- **Infrastructure**: Prepared for IoT device integration (e.g., rural connectivity solutions)
-
-## Current Features
-
-- User registration and skill profiling
-- Wallet management with Pi Network integration
-- Smart contract for task agreements and escrow
-- Basic task matching system
-- Payment processing using blockchain
-- Test coverage for core services
-- RESTful API for client interaction
-
-## Future Enhancements
-
-- AI-powered skill assessment and task recommendations
-- Mobile app for easier access in low-connectivity areas
-- Integration with local entrepreneurship hubs
-- Expanded payment options (mobile money, local currencies)
-- Mentorship and skill development modules
-- Community forums for peer support
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/KOSASIH/economic-queens-tech.git
-   cd economic-queens-tech
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Set up environment variables (create a `.env` file):
-   ```
-   DATABASE_URL=your_postgres_connection_string
-   PI_NETWORK_API_KEY=your_pi_network_key
-   PORT=3000
-   ```
-
-4. Run migrations:
-   ```bash
-   npm run migrate
-   ```
-
-5. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-6. Run tests:
-   ```bash
-   npm test
-   ```
-
-## Contributing
-
-Contributions are welcome, especially in these areas:
-- Improving accessibility for low-literacy users
-- Enhancing security and trust mechanisms
-- Building mobile-first interfaces
-- Localization and language support
-- Documentation and user guides
-
-Please open an issue first to discuss proposed changes before submitting a pull request.
+## Credits
+This project is inspired by the open-source initiative
+"Economic Queens Tech" and has been refactored and repositioned to focus
+specifically on skill-to-income workflows for women.
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Project Context
-
-This was developed as part of exploring how blockchain and decentralized systems can address real-world social challenges. The focus is on practical implementation rather than theoretical concepts—building something that could actually be used by the intended audience.
-
----
-
-*Note: This is a prototype/educational project. Production deployment would require additional security audits, user testing with the target demographic, and partnerships with local organizations that work with women in underserved communities.*
+MIT License
