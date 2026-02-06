@@ -1,0 +1,27 @@
+{
+  "name": "women-skill-to-income",
+  "version": "1.0.0",
+  "description": "A platform connecting women with skills to income-generating microjobs. Focuses on accessibility, trust, and inclusive digital work opportunities for homemakers, rural women, and those returning after career breaks.",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "ts-node src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "migrate": "ts-node database/migrations/run.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "women empowerment",
+    "skill marketplace",
+    "microjobs",
+    "blockchain payments",
+    "inclusive economy"
+  ],
+  "author": "KOSASIH",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.8.3"
+  }
+}
